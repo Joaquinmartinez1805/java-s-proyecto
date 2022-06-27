@@ -34,3 +34,11 @@ form{
 button{
     color: white;
 }
+.resultado{
+    border: solid;
+    border-color:rgba(241, 245, 8, 0.808);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    padding-left: 10px;
+}
