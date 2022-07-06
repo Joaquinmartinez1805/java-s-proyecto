@@ -136,7 +136,12 @@ function cotizarSeguro(e){
     const tipo = document.querySelector('input[name=tipo]:checked').value;
 
     if(vehiculo === '' || year === '' || tipo === ''){
-        ui.mostrarMensaje('Todos los campos son obligatorios', 'error');
+        Swal.fire({
+            icon: 'error',
+            title: 'error',
+            text: 'todos los campos son obligatorios',
+            showConfirmButton:'cool'
+        })
         return;
     }
 
